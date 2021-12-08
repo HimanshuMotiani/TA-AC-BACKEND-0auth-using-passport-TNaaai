@@ -11,7 +11,7 @@ var slug = require('slug')
 var passport = require("passport")
 var GoogleStrategy = require('passport-google-oauth20').Strategy;
 var GitHubStrategy = require('passport-github').Strategy;
-
+var auth = require("./middlewares/auth")
 require("dotenv").config();
 require("./modules/passport");
 
